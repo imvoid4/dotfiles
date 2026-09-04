@@ -1,0 +1,6 @@
+font_family = "JetBrains Mono"
+font_size = 12
+
+base = "#000000"
+text = "#ffffff"
+# = "#556677"

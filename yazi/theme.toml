@@ -1,0 +1,145 @@
+# yazi theme — "neon-district"
+# Inspired by a black-background cyberpunk wallpaper with dark turquoise
+# and red neon-sign accents.
+
+[flavor]
+use = ""
+
+# ---------------------------------------------------------------------------
+# Manager (the main file list panes)
+[manager]
+cwd = { fg = "#0f9e8e" }
+
+# Hovered item in the parent/current pane
+hovered         = { fg = "#000000", bg = "#0f9e8e" }
+preview_hovered = { fg = "#000000", bg = "#0f9e8e" }
+
+find_keyword  = { fg = "#ff3b3b", bold = true }
+find_position = { fg = "#ff8a5c", bg = "reset", bold = true }
+
+marker_copied   = { fg = "#0f9e8e", bg = "#0f9e8e" }
+marker_cut      = { fg = "#ff3b3b", bg = "#ff3b3b" }
+marker_marked   = { fg = "#0f9e8e", bg = "#0f9e8e" }
+marker_selected = { fg = "#ff8a5c", bg = "#ff8a5c" }
+
+tab_active   = { fg = "#000000", bg = "#0f9e8e", bold = true }
+tab_inactive = { fg = "#6b7b78", bg = "#0a0f0d" }
+
+count_copied   = { fg = "#000000", bg = "#0f9e8e" }
+count_cut      = { fg = "#000000", bg = "#ff3b3b" }
+count_selected = { fg = "#000000", bg = "#ff8a5c" }
+
+border_style = { fg = "#123a34" }
+border_symbol = "│"
+
+syntect_theme = ""
+
+# ---------------------------------------------------------------------------
+# Mode (bottom-left status indicator)
+[mode]
+normal_main = { fg = "#000000", bg = "#0f9e8e", bold = true }
+normal_alt  = { fg = "#0f9e8e", bg = "#0a0f0d" }
+
+select_main = { fg = "#000000", bg = "#ff8a5c", bold = true }
+select_alt  = { fg = "#ff8a5c", bg = "#0a0f0d" }
+
+unset_main = { fg = "#000000", bg = "#ff3b3b", bold = true }
+unset_alt  = { fg = "#ff3b3b", bg = "#0a0f0d" }
+
+# ---------------------------------------------------------------------------
+# Status line
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#123a34", bg = "#123a34" }
+
+progress_label  = { fg = "#e8fdf9", bold = true }
+progress_normal = { fg = "#0f9e8e", bg = "#0a0f0d" }
+progress_error  = { fg = "#ff3b3b", bg = "#0a0f0d" }
+
+perm_type  = { fg = "#0f9e8e" }
+perm_read  = { fg = "#ff8a5c" }
+perm_write = { fg = "#ff3b3b" }
+perm_exec  = { fg = "#0f9e8e" }
+perm_sep   = { fg = "#6b7b78" }
+
+# ---------------------------------------------------------------------------
+# Which (key-hint popup)
+[which]
+mask            = { bg = "#000000" }
+cand            = { fg = "#0f9e8e" }
+rest            = { fg = "#6b7b78" }
+desc            = { fg = "#ff8a5c" }
+separator       = "  "
+separator_style = { fg = "#123a34" }
+
+# ---------------------------------------------------------------------------
+# Confirm / input popups
+[confirm]
+border = { fg = "#0f9e8e" }
+title  = { fg = "#ff3b3b", bold = true }
+content = { fg = "#e8fdf9" }
+list    = { fg = "#e8fdf9" }
+btn_yes = { fg = "#000000", bg = "#0f9e8e", bold = true }
+btn_no  = { fg = "#000000", bg = "#ff3b3b", bold = true }
+
+[spot]
+border = { fg = "#0f9e8e" }
+title  = { fg = "#ff8a5c" }
+
+[pick]
+border   = { fg = "#0f9e8e" }
+active   = { fg = "#ff3b3b", bold = true }
+inactive = { fg = "#e8fdf9" }
+
+[input]
+border   = { fg = "#0f9e8e" }
+title    = { fg = "#e8fdf9" }
+value    = { fg = "#e8fdf9" }
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#0f9e8e" }
+active   = { fg = "#000000", bg = "#0f9e8e" }
+inactive = { fg = "#e8fdf9" }
+
+# ---------------------------------------------------------------------------
+# Tasks
+[tasks]
+border  = { fg = "#0f9e8e" }
+title   = { fg = "#e8fdf9" }
+hovered = { fg = "#ff8a5c", underline = true }
+
+# ---------------------------------------------------------------------------
+# Help menu
+[help]
+on      = { fg = "#0f9e8e" }
+run     = { fg = "#ff8a5c" }
+desc    = { fg = "#6b7b78" }
+hovered = { fg = "#000000", bg = "#0f9e8e", bold = true }
+footer  = { fg = "#e8fdf9", bg = "#123a34" }
+
+# ---------------------------------------------------------------------------
+# File-type colors — icons/red, directories/selection stay turquoise
+[filetype]
+rules = [
+	{ mime = "image/*", fg = "#ff3b3b" },
+	{ mime = "video/*", fg = "#ff3b3b" },
+	{ mime = "audio/*", fg = "#ff3b3b" },
+	{ mime = "application/zip", fg = "#ff3b3b" },
+	{ mime = "application/gzip", fg = "#ff3b3b" },
+	{ mime = "application/x-tar", fg = "#ff3b3b" },
+	{ mime = "application/x-bzip2", fg = "#ff3b3b" },
+	{ mime = "application/x-7z-compressed", fg = "#ff3b3b" },
+	{ mime = "application/x-rar", fg = "#ff3b3b" },
+
+	{ url = "*.md", fg = "#ff3b3b" },
+	{ url = "*.toml", fg = "#ff3b3b" },
+	{ url = "*.json", fg = "#ff3b3b" },
+	{ url = "*.yaml", fg = "#ff3b3b" },
+	{ url = "*.yml", fg = "#ff3b3b" },
+
+	{ url = "*/", fg = "#0f9e8e", bold = true },
+
+	{ url = "*", fg = "#ff3b3b" },
+]

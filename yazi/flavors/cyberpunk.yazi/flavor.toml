@@ -1,0 +1,34 @@
+[manager]
+cwd = { fg = "#00f5d4", bold = true }
+
+# Hovered / Selected items
+hovered  = { fg = "#000000", bg = "#00f5d4", bold = true }
+preview_hovered = { underline = true }
+
+# Borders
+border_style = { fg = "#1a3a3a" }
+
+[status]
+# Normal mode indicator (Turquoise block)
+mode_normal = { fg = "#000000", bg = "#00f5d4", bold = true }
+mode_select = { fg = "#000000", bg = "#ff5555", bold = true }
+mode_unset  = { fg = "#000000", bg = "#ffb86c", bold = true }
+
+# Progress & permissions
+permissions_t = { fg = "#00f5d4" }
+permissions_r = { fg = "#ffb86c" }
+permissions_w = { fg = "#ff5555" }
+permissions_x = { fg = "#50fa7b" }
+
+[select]
+border = { fg = "#00f5d4" }
+active = { fg = "#00f5d4", bold = true }
+inactive = {}
+
+[input]
+border = { fg = "#00f5d4" }
+title  = {}
+value  = {}
+
+[completion]
+border = { fg = "#00f5d4" }
